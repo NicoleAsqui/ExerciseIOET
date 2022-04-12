@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.LinkedList;
@@ -27,10 +29,7 @@ public class FileRead {
 	        while ((line = buffer.readLine()) != null) {
 	            if (! (line.trim().equals("") || line.trim().equals("\n"))){
 	            	
-	                String[] datos = line.split(splitBy);	                
-	                //System.out.println(Arrays.asList(datos));
-	                
-	                
+	                String[] datos = line.split(splitBy);	           
 	                LinkedList<Schedule> arraySchedule = new LinkedList<Schedule>();
 	                
 	                String[] timetable = datos[1].split(",");
@@ -39,18 +38,14 @@ public class FileRead {
 	                	String day = timetable[i].substring(0,2);
 	 	                String hour = timetable[i].substring(2);
 	 	                String[] hourBySplit= hour.split("-");
-	 	                String timestart = hourBySplit[0];
-	 	                String timeFinish =hourBySplit[1];
+	 	               LocalTime timestart = LocalTime.parse(hourBySplit[0], DateTimeFormatter.ISO_TIME);
+	 	               LocalTime timeFinish = LocalTime.parse(hourBySplit[1], DateTimeFormatter.ISO_TIME);
+	 	                
 	 	                Schedule schedule = new Schedule(day, timestart,timeFinish);
 	 	               arraySchedule.add(schedule);
 	                }
 
-	                Employee employee = new Employee(datos[0],arraySchedule);	 
-	                //System.out.println(employee.getName());
-	                //System.out.println(employee.toString());
-	                //scheduleByEmployees.put(employee, arraySchedule);
-	                //System.out.println(employee);
-	                //System.out.println(arraySchedule);
+	                Employee employee = new Employee(datos[0],arraySchedule);
 	                scheduleByEmployees.add(employee);
 	            }
 	            count++;

@@ -1,11 +1,13 @@
 package acme;
 
+import java.time.LocalTime;
+
 public class Schedule {
 	String day;
-	String timeStart;
-	String timeFinish;
+	LocalTime timeStart;
+	LocalTime timeFinish;
 	
-	public Schedule(String day, String timeStart, String timeFinish) {
+	public Schedule(String day, LocalTime timeStart, LocalTime timeFinish) {
 		this.day = day;
 		this.timeStart = timeStart;
 		this.timeFinish = timeFinish;
@@ -16,16 +18,16 @@ public class Schedule {
 	public void setDay(String day) {
 		this.day = day;
 	}
-	public String getTimeStart() {
+	public LocalTime getTimeStart() {
 		return timeStart;
 	}
-	public void setTimeStart(String timeStart) {
+	public void setTimeStart(LocalTime timeStart) {
 		this.timeStart = timeStart;
 	}
-	public String getTimeFinish() {
+	public LocalTime getTimeFinish() {
 		return timeFinish;
 	}
-	public void setTimeFinish(String timeFinish) {
+	public void setTimeFinish(LocalTime timeFinish) {
 		this.timeFinish = timeFinish;
 	}
 	
