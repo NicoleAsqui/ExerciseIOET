@@ -7,7 +7,6 @@ import filesReader.FileRead;
 public class main {
 
 	public static void main(String[] args) {
-		//System.out.println(FileRead.leerArchivo());
 		
 		LinkedList<Employee> scheduleByEmployees = FileRead.leerArchivo();
 		iterateList(scheduleByEmployees);
