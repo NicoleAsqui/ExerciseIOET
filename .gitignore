@@ -10,7 +10,6 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-<<<<<<< HEAD
 =======
 # Eclipse Core      
 .project
@@ -18,7 +17,6 @@
 # JDT-specific (Eclipse Java Development Tools)     
 .classpath
 .settings
->>>>>>> 4a8f5e6417928cfaf2d411f66f8fbf30313e26f7
 
 # Package Files #
 *.jar
