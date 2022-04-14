@@ -5,15 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.Date;
 import java.util.LinkedList;
-import java.util.Map;
 
 import acme.Employee;
 import acme.Schedule;
 
-public class FileRead {	
+public final class FileRead {	
 		
 	public static LinkedList<Employee> readFiles(){		
 		
@@ -23,7 +20,6 @@ public class FileRead {
 	    BufferedReader buffer = null;
 	    String line = "";
 	    String splitBy = "=";
-	    int counter =0; 
 	    
 	    try {
 	    	buffer = new BufferedReader(new FileReader(txtFile));	       
@@ -31,7 +27,7 @@ public class FileRead {
 	            if (! (line.trim().equals("") || line.trim().equals("\n"))){
 	            	
 	                String[] data = line.split(splitBy);	           
-	                LinkedList<Schedule> scheduleList = new LinkedList<Schedule>();	                
+	                LinkedList<Schedule> scheduleList = new LinkedList<>();	                
 	                String[] timeList = data[1].split(",");
 	                
 	                for (int i =0; i<timeList.length; i++) {
@@ -48,7 +44,6 @@ public class FileRead {
 	                Employee employee = new Employee(data[0],scheduleList);
 	                employees.add(employee);
 	            }
-	            counter++;
 	        }
 	        
 	    } catch (FileNotFoundException e) {

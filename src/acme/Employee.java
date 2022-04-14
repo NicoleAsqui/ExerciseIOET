@@ -1,12 +1,11 @@
 package acme;
 
 import java.util.LinkedList;
-import java.util.Objects;
 
 public class Employee {
 	
 	private String name;
-	private LinkedList<Schedule> schedule;
+	private LinkedList<Schedule> schedule;	
 	
 	public Employee(String name, LinkedList<Schedule> schedule) {
 		this.name = name;

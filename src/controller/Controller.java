@@ -72,7 +72,7 @@ public class Controller {
 			//TimeStartA<=TimeStartB and TimeFinishA<=TimeFinishB and TimeStartB<TimeFinishA
 			Boolean aBeforeB=(timeStartA.isBefore(timeStartB)|| timeStartA.equals(timeStartB)) && (timeFinishA.isBefore(timeFinishB)||timeFinishA.equals(timeFinishB)) && timeStartB.isBefore(timeFinishA);
 			
-			if (aContainsB || aEqualsB || bContainsA|| aAfterB|| aBeforeB ){
+			if ( aContainsB || aEqualsB || bContainsA|| aAfterB|| aBeforeB){
 				contador ++;		
 			}
 		}		
