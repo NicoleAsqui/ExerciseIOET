@@ -15,40 +15,40 @@ import acme.Schedule;
 
 public class FileRead {	
 		
-	public static LinkedList<Employee> leerArchivo(){		
-		LinkedList<Employee> scheduleByEmployees = new LinkedList<>();	
+	public static LinkedList<Employee> readFiles(){		
+		
+		LinkedList<Employee> employees = new LinkedList<>();	
 		
 	    String txtFile = "files/schedule.txt";
 	    BufferedReader buffer = null;
 	    String line = "";
 	    String splitBy = "=";
-	    int count =0; 
+	    int counter =0; 
 	    
 	    try {
 	    	buffer = new BufferedReader(new FileReader(txtFile));	       
 	        while ((line = buffer.readLine()) != null) {
 	            if (! (line.trim().equals("") || line.trim().equals("\n"))){
 	            	
-	                String[] datos = line.split(splitBy);	           
-	                LinkedList<Schedule> arraySchedule = new LinkedList<Schedule>();
+	                String[] data = line.split(splitBy);	           
+	                LinkedList<Schedule> scheduleList = new LinkedList<Schedule>();	                
+	                String[] timeList = data[1].split(",");
 	                
-	                String[] timetable = datos[1].split(",");
-	                
-	                for (int i =0; i<timetable.length; i++) {
-	                	String day = timetable[i].substring(0,2);
-	 	                String hour = timetable[i].substring(2);
+	                for (int i =0; i<timeList.length; i++) {
+	                	String day = timeList[i].substring(0,2);
+	 	                String hour = timeList[i].substring(2);
 	 	                String[] hourBySplit= hour.split("-");
-	 	               LocalTime timestart = LocalTime.parse(hourBySplit[0], DateTimeFormatter.ISO_TIME);
-	 	               LocalTime timeFinish = LocalTime.parse(hourBySplit[1], DateTimeFormatter.ISO_TIME);
+	 	                LocalTime timestart = LocalTime.parse(hourBySplit[0], DateTimeFormatter.ISO_TIME);
+	 	                LocalTime timeFinish = LocalTime.parse(hourBySplit[1], DateTimeFormatter.ISO_TIME);
 	 	                
 	 	                Schedule schedule = new Schedule(day, timestart,timeFinish);
-	 	               arraySchedule.add(schedule);
+	 	               scheduleList.add(schedule);
 	                }
 
-	                Employee employee = new Employee(datos[0],arraySchedule);
-	                scheduleByEmployees.add(employee);
+	                Employee employee = new Employee(data[0],scheduleList);
+	                employees.add(employee);
 	            }
-	            count++;
+	            counter++;
 	        }
 	        
 	    } catch (FileNotFoundException e) {
@@ -65,6 +65,6 @@ public class FileRead {
             }
         }
 	
-	     return scheduleByEmployees;
+	     return employees;
 	}
 }
