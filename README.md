@@ -36,6 +36,11 @@ ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 RENE-ASTRID: 3
 ```
 
+## Programs and dependencies 
+* JAVA SE 17 (https://docs.oracle.com/en/java/javase/17/docs/api/index.html) - Programming language
+* Eclipse (https://www.eclipse.org/downloads/) - IDE
+* JUnit Jupiter Test (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api) - Library
+
 ## Architecture
 
 The architecture used in this project is the object-oriented architecture is based on the structure and behavior of a software application is represented through the use of multiple interoperable objects. Where the objects encapsulate the different properties and tasks in an optimized and organized way, and connect, communicate and collaborate through well-defined interfaces.
@@ -55,7 +60,14 @@ To execute the solution of this project we must follow the following steps:
 git clone https://github.com/NicoleAsqui/ExerciseIOET/
 cd ExerciseIOET
 ```
-Finally in the IDE of our preference we run the main file
+Finally in the IDE of our preference we run the main file.
+We can also build a jar file and run it with the following command in the console:
+
+```bash
+git clone https://github.com/NicoleAsqui/ExerciseIOET/
+cd ExerciseIOET
+java -cp nameJar.jar main
+```
 
 ## Methodology
 
