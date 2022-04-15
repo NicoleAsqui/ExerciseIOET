@@ -55,6 +55,7 @@ To execute the solution of this project we must follow the following steps:
 git clone https://github.com/NicoleAsqui/ExerciseIOET/
 cd ExerciseIOET
 ```
+Finally in the IDE of our preference we run the main file
 
 ## Methodology
 
