@@ -45,4 +45,20 @@ Also by separating the classes and packages we can get a more simplified way of 
 ### UML Diagram
 ![uml](https://user-images.githubusercontent.com/56647127/163497233-36610bd0-f345-4d88-be1e-f6d64a332a23.png)
 
+## Methodology
+
+For this project I used waterfall methodology which is a traditional approach to project management where tasks and phases are completed in a linear and sequential manner, and each stage of the project must be completed before the next begins.
+
+The stages are shown below:
+
+Requirements: It is based on the compilation of the information of the exercise on the entrances and exits that they wish to execute.
+
+Analysis: At this stage, the language used (java) was established.
+
+Design: In this stage, the entity-relationship diagram and UML to be implemented were made.
+
+Construction: The code was implemented in small parts with an integration at the end.
+
+Testing: Unit tests were performed with JUnit on the coincidence of schedules
+
 
