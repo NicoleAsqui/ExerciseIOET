@@ -45,6 +45,10 @@ Also by separating the classes and packages we can get a more simplified way of 
 ### UML Diagram
 ![uml](https://user-images.githubusercontent.com/56647127/163497233-36610bd0-f345-4d88-be1e-f6d64a332a23.png)
 
+
+### Entity relationship diagram
+![entity-relation](https://user-images.githubusercontent.com/56647127/163501549-63644376-c2fb-43c0-bcec-3a5c3c7ac0ce.png)
+
 ## Methodology
 
 For this project I used waterfall methodology which is a traditional approach to project management where tasks and phases are completed in a linear and sequential manner, and each stage of the project must be completed before the next begins.
