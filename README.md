@@ -39,7 +39,8 @@ RENE-ASTRID: 3
 ## Programs and dependencies 
 * JAVA SE 17 (https://docs.oracle.com/en/java/javase/17/docs/api/index.html) - Programming language
 * Eclipse (https://www.eclipse.org/downloads/) - IDE
-* JUnit Jupiter Test (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api) - Library
+* JUnit Jupiter Test (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api) - Library* 
+* Sonarlint (https://www.sonarlint.org/?gclid=Cj0KCQjwjN-SBhCkARIsACsrBz5wM2mzBlWtOJtD_SpsBCVziSnXwVIIdFprnTpw353sTy1zKFc6gRUaAmfpEALw_wcB) - Plugin
 
 ## Architecture
 
