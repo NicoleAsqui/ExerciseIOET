@@ -22,7 +22,6 @@ ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 ASTRID-RENE: 2
 ASTRID-ANDRES: 3
 RENE-ANDRES: 2
-
 ```
 ### Example 2:
 
@@ -38,6 +37,12 @@ RENE-ASTRID: 3
 ```
 
 ## Architecture
+
 The architecture used in this project is the object-oriented architecture is based on the structure and behavior of a software application is represented through the use of multiple interoperable objects. Where the objects encapsulate the different properties and tasks in an optimized and organized way, and connect, communicate and collaborate through well-defined interfaces.
+
+Also by separating the classes and packages we can get a more simplified way of understanding the code as MVC by separating the Employee and Schedule models, the Intersection interface and the program logic in the controller.
+
 ### UML Diagram
 ![uml](https://user-images.githubusercontent.com/56647127/163497233-36610bd0-f345-4d88-be1e-f6d64a332a23.png)
+
+
