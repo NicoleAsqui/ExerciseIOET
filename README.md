@@ -61,6 +61,7 @@ git clone https://github.com/NicoleAsqui/ExerciseIOET/
 cd ExerciseIOET
 ```
 Finally in the IDE of our preference we run the main file.
+
 We can also build a jar file and run it with the following command in the console:
 
 ```bash
@@ -75,14 +76,14 @@ For this project I used waterfall methodology which is a traditional approach to
 
 The stages are shown below:
 
-Requirements: It is based on the compilation of the information of the exercise on the entrances and exits that they wish to execute.
+* Requirements: It is based on the compilation of the information of the exercise on the entrances and exits that they wish to execute.
 
-Analysis: At this stage, the language used (java) was established.
+* Analysis: At this stage, the language used (java) was established.
 
-Design: In this stage, the entity-relationship diagram and UML to be implemented were made.
+* Design: In this stage, the entity-relationship diagram and UML to be implemented were made.
 
-Construction: The code was implemented in small parts with an integration at the end.
+* Construction: The code was implemented in small parts with an integration at the end.
 
-Testing: Unit tests were performed with JUnit on the coincidence of schedules
+* Testing: Unit tests were performed with JUnit on the coincidence of schedules
 
 
