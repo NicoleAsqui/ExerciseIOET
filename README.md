@@ -1,5 +1,6 @@
 # ACME project for IOET
 
+
 ## Objetive
 The objective of this exercise is to show the paired names of employees who have coincided in their work hours and the frequency with which they have done so.
 
@@ -39,7 +40,7 @@ RENE-ASTRID: 3
 ## Programs and dependencies 
 * JAVA SE 17 (https://docs.oracle.com/en/java/javase/17/docs/api/index.html) - Programming language
 * Eclipse (https://www.eclipse.org/downloads/) - IDE
-* JUnit Jupiter Test (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api) - Library* 
+* JUnit Jupiter Test (https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api) - Library
 * Sonarlint (https://www.sonarlint.org/?gclid=Cj0KCQjwjN-SBhCkARIsACsrBz5wM2mzBlWtOJtD_SpsBCVziSnXwVIIdFprnTpw353sTy1zKFc6gRUaAmfpEALw_wcB) - Plugin
 
 ## Architecture
@@ -83,7 +84,7 @@ The stages are shown below:
 
 * Design: In this stage, the entity-relationship diagram and UML to be implemented were made.
 
-* Construction: The code was implemented in small parts with an integration at the end.
+* Implementation: The code was implemented in small parts with an integration at the end.
 
 * Testing: Unit tests were performed with JUnit on the coincidence of schedules
 
