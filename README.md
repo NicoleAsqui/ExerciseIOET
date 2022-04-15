@@ -42,12 +42,19 @@ The architecture used in this project is the object-oriented architecture is bas
 
 Also by separating the classes and packages we can get a more simplified way of understanding the code as MVC by separating the Employee and Schedule models, the Intersection interface and the program logic in the controller.
 
+### Entity relationship diagram
+![entity-relation](https://user-images.githubusercontent.com/56647127/163501549-63644376-c2fb-43c0-bcec-3a5c3c7ac0ce.png)
+
 ### UML Diagram
 ![uml](https://user-images.githubusercontent.com/56647127/163497233-36610bd0-f345-4d88-be1e-f6d64a332a23.png)
 
+## Run locally
+To execute the solution of this project we must follow the following steps:
 
-### Entity relationship diagram
-![entity-relation](https://user-images.githubusercontent.com/56647127/163501549-63644376-c2fb-43c0-bcec-3a5c3c7ac0ce.png)
+```bash
+git clone https://github.com/NicoleAsqui/ExerciseIOET/
+cd ExerciseIOET
+```
 
 ## Methodology
 
