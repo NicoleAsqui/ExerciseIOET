@@ -1,5 +1,5 @@
 # ACME project for IOET
-The goal of this exercise is to output a table containing pairs of employees and how often they have coincided in the office.
+
 ## Objetive
 The objective of this exercise is to show the paired names of employees who have coincided in their work hours and the frequency with which they have done so.
 
